@@ -144,10 +144,15 @@ height: 3.2rem;
     justify-content: center;
     margin-top: 3rem;
 }
-.right-section
+.full-section
 {
     display: flex;
     flex-direction: column;
+}
+.right-section
+{
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: space-between;
     margin-left:10%;
     background-color: #ffffff;
@@ -166,6 +171,8 @@ height: 3.2rem;
     background-size:79%;
     margin-top: 2rem;
 margin-left: 12%;
+order: 1;
+
 }
 .parr
 {
@@ -173,11 +180,12 @@ margin-left: 12%;
 }
 .left2
 {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     color: #ffffff;
      justify-content: space-between;
      margin-left: 30%;
+     order: 2;
      
 }
 @media screen and (min-width: 720px)
@@ -227,7 +235,7 @@ margin-left: 12%;
 {
     margin-top: 2rem;
     width:80%;
-  height: 40%;
+  height: 42%;
   background-color: #ffffff;
   border-radius: 1rem;
   border: 1px;
@@ -251,7 +259,7 @@ font-size: 1rem;
 .left2
 {
     margin-left: 1rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 .left-banner
 {
@@ -280,6 +288,7 @@ font-size: 1rem;
 {
     .logo{
         margin-top: 3rem;
+        font-size: 2rem;
     }
     .btn{
        display: flex;
@@ -313,7 +322,7 @@ font-size: 1rem;
      }
      .parr{
         width:75%;
-  height: 49%;
+  height: 57%;
      }
      .left1{
         font-size: 1.5rem;
@@ -325,7 +334,7 @@ font-size: 1rem;
      .left-banner
      {
         font-size: 1.5rem;
-        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg")  50%     no-repeat; 
+        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg")  30%     no-repeat; 
         
      }
      .right-section
@@ -341,12 +350,34 @@ font-size: 1rem;
         height: 180px;
      }
      .left2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 2rem;
         gap: 2rem;
+        padding: 0 0 2rem 0;
      }
 }
 .main-container1
 {
-    background-color: #ffffff;
+    width: 100%;
 }
+.container2
+{
+ display: flex;
+ flex-wrap: wrap;
+ background-color: #F5F5F5;
+}
+.head1
+{
+    margin-top: 3rem;
+    font-size: 1.4rem;
+  margin-left: 1rem;
+color: #1F2024;
+}
+.head2
+{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  color: #1F2024;
+}
+
+
