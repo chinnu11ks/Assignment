@@ -1,643 +1,991 @@
-*
-{
+* {
     box-sizing: border-box;
 }
-html
-{
+
+html {
     font-size: 10px;
-    font-family: "poppins",sans-serif;   
+    font-family: "poppins", sans-serif;
 }
-body
-{
+
+body {
     margin: 0;
     padding: 0;
 }
-.main
-{
+
+.main {
     max-width: 1500px;
-    margin:  auto;
-    }
-.main-container
-{
-   width: 100%;
+    margin: auto;
 }
-.container1
-{
- background-color:#1F2024;
-}
-.header{
-    display: flex;
-    justify-content: space-between;    
-}
-.headerpic
-{ 
-display: flex;
-flex-direction: row;
-  }
-.logopic
-{
-    margin-top: 2rem;
-    width: 40px;
-    height: 40px;
-    background: url("/assessts/images/div.svg");
-    /* border: 1px solid ; */
-    border-radius: 10%;
-    margin-left: 1rem;
-}
-.logo
-{
-    margin-left: 1rem;
-    font-size: 1rem;
-    color: #2a55ff;
-    margin-top:2.5rem;
-   }
-.menu
-{
-    display: none;
-}
-.items
-{
- margin-top: 2rem;
-color: #ffffff;
-}
-.btn
-{
-    display: none;
-}
-.signin {
-    border-radius: 1.5rem;
-    border: 2px;
-    width: 95%;
-    height: 85%;
-    background-color: #ffff;
-    outline: none;
-    color: #1f2024;
-  }
-  .signup {
-    border-radius: 1.5rem;
-    border: 2px;
+
+/* .main-container */
+/* { */
+/* width: 100%; */
+/* } */
+.container1 {
     width: 100%;
-    height:90%;
-    background-color: #1a47ff;
-    color: #ffff;
-    outline: none;
-  }
-.toggle-button
-{
+    background-color: #1F2024;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.headerPic {
+    display: flex;
+}
+
+.logoPic {
+    width: 33px;
+    height: 33px;
+    background: url("/assessts/images/div.svg") 19% no-repeat;
+    border-radius: 2rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.logo {
+    margin: 1.5rem 0 0 1.5rem;
+    color: #2a55ff;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+.items {
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+.btn {
+    display: none;
+}
+
+.toggle-Button {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-
-   
+    padding: 1.5rem;
 }
-.bar
-{
+
+.bar {
     width: 25px;
     height: 5px;
     background-color: #ffffff;
-    margin-top:2px;
-    margin-right: 4rem;
-    }
+    margin-top: 1px;
+}
 
-.main-head
-{
-    font-size:15px;
-    color: #ffffff; 
-    margin-left: 20%;   
-}
-.main-header
-{
-    display:none;
-}
-.btn1{
-    display: flex;
-    flex-direction: row;
-    margin-top:4rem;
-    border-radius: 1rem; 
-    gap: 15px;
-margin-left: 1.5rem;
-width: 3rem;
-height: 3.2rem;
+.signIn,
+.signUp {
 
-}
-.account
-{
-   color: #1f2024;
-
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    
-}
-.demo
-{
-    border: 2px solid #ffffff;
-    background-color: #000000;
-    color:#ffffff;
-    
-}
-.section1
-{
-    color: #ffffff;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 3rem;
-}
-.full-section
-{
-    display: flex;
-    flex-direction:  column-reverse;
-    width: 90%;
-    justify-content: center;
-}
-.right-section
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    height: 120px;
-    margin-top: 2rem;
-    background-color: #ffffff;
     border-radius: 1rem;
     border: 1px;
-    /* margin-left:10%; */
-   
-    /* margin-right: 2rem; */
-    /* width: 180px; */
-   
-   
-}
-.right-pic
-{
-    
-    background: url("/assessts/images/624b125fbdd2fb6da7513d8b_create-base-templates%25402x.webp.svg")  no-repeat;
-    width: 200px;
-        height: 180px;
-    background-size:79%;
-    margin-top: 2rem;
-/* margin-left: 12%; */
-   
-
-}
-.parr
-{
-    display: none;
-}
-.left2
-{
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-     justify-content: center;
-     align-items: center;
-    width: 60%;     
-}
-@media (min-width: 720px)
-{
-    .logopic{
-        border: 1px;
-        border-radius:15%;
-    }
-    .menu{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        font-size:15px;
-        justify-content: center;
-    }
-    .main-head{
-        font-size: 20px;
-    }
-.main-header{
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    color: #ffffff;
-    margin-left: 20%;
-}
-.btn1
-{
-    justify-items: center;
-   margin-left: 20%;
-   font-size: 20px;
-}
-.section1
-{
-    font-size: 20px;
-    
-}
-.full-section
-{
-    display: flex;
-    flex-direction: row;
-}
-.left-section
-{
-    margin-left: 20%;
-}
-.parr
-{
-    margin-top: 2rem;
-    width:80%;
-  height: 46%;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  border: 1px;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  display: flex;
-flex-direction: column;
-margin-left: 3%;
-font-size: 1rem;
-}
-.left1
-{
-    font-size: 1.5rem;
-    color: #464040;
-}
-.subleft
-{
-    font-size: .7rem;
-    color: #464040;}
-.left2
-{
-    margin-top: .5rem;
-}
-.left-banner
-{
-    font-size: 1.1rem;
-    color: #1a47ff;
-    background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg")  42%     no-repeat;    
-}
-.right-section
-{
-    margin-right:4%;
     width: 40%;
-    height: 40%;
-    margin-top: 2rem;    
-}
-.right-pic
-{
-    margin-left: 10%;
-    width: 200px;
-    height: 100px;
-}
-}
-@media  (min-width:1200px)
-{
-    .logo{
-        margin-top: 3rem;
-        font-size: 2rem;
-    }
-    .btn{
-       display: flex;
-        flex-direction: row;
-        
-        gap:10px;
-        margin-right: 10%;
-        font-size: 3rem;
-        margin-top: 1rem;
-     }
-     .toggle-button
-     {
-        display: none;
-     }
-     .main-head
-     {
-        margin-left:15%;
-        font-size: 60px;
-     }
-     .main-header{
-        margin-left:15%;
-        font-size: 20px;
-     }
-     .btn1{
-        margin-left: 15%;
-        font-size: 25px;
-     }
-     .section1
-     {
-        font-size: 30px;
-     }
-     .parr{
-        width:75%;
-  height: 47%;
-     }
-     .left1{
-        font-size: 1.5rem;
-     }
-     .subleft
-     {
-        font-size: 1.3rem;
-     }
-     .left-banner
-     {
-        font-size: 1.2rem;
-        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg")  40%     no-repeat; 
-        
-     }
-     .right-section
-     {
-       margin-top: 1rem;
-        width: 500px;
-        height: 240px;
-     }
-     .right-pic
-     {
-        background-size: 80%;
-        width: 450px;
-        height: 230px;
-     }
-     .left2{
-        font-size: 1.8rem;
-        gap:.5rem;
-        padding: 2rem;
-     }
-}
-/* second section */
-.main-container1
-{
-    width: 100%;
-}
-.container2
-{
- display: flex;
- flex-wrap: wrap;
- background-color: #F5F5F5;
-}
-.full-second
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-.second-header
-{
-    margin-top: 3rem;
-    font-size: 1.4rem;
-  color: #1F2024;
-}
-.second-sub
-{
-    font-size: .5rem;
-    color: #1f2024;
-}
-.second-left1,.second-left2,
-.second-right1,.second-right2
-{ 
-    border-radius: 1rem;
-    border: 1px;
-    width: 300px;
-    height: 260px;
-    background-color: rgba(112,112,112,.2);
-    margin-top: 1rem;
-}
-.secondpic
-{
-    background: url("/assessts/images/624b0ff81cfe0f58c5ec933f_advertising-banners%25402x.webp.svg") 60% no-repeat;
-    width: 250px;
-    height: 180px;
-}
-.second-content
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.second-section
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.content-head,.content-head1,
-.right-head,.right-head1
-{ 
-    font-size: 1.5rem;  
-}
-.content-sub,.content-sub1,
-.right-sub,.right-sub1
-{
-    color: #707070;
-    font-size: 1rem;
-}
-.secondpic1
-{
-    background: url("/assessts/images/624c10fef8715f0c0d41fc33_social-content%25402x.webp.svg") 60% no-repeat;
-    width: 250px;
-    height: 190px;
-}
-.second-content1,.right-content,.right-content1
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.secondpic2
-{
-  background: url("/assessts/images/624b0ff86b21e6d5ede6a890_email-marketing%25402x.png.svg") 60% no-repeat;
-  width: 250px;
-  height: 190px;
-}
-.secondpic3
-{
-    background: url("/assessts/images/624b0ff8de14f978040c0edd_personalized-images%25402x.webp.svg") 60% no-repeat;
-    width: 250px;
-    height: 190px;
-}
-.second1-content
-{ 
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-.content-second
-{
-    font-size: 1.3rem;
-    color: #000000;
-    width: 70%;
-}
-.content-par
-{
-    font-size: .9rem;
-    color: #707070;
-    width: 50%;
+    height: 80%;
 }
 
-.imag-section
-{
-
-    background: url("/assessts/images/624b0ff858ed5b5899f53b5d_scale-visual-marketing%25402x-p-500.webp.svg")   no-repeat;
-    width: 110%;
-    height: 150px;
-    background-size: 70%;
+.first-Section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.image-right1
-{
-    font-size: 1.2rem;
-    color: #1a47ff;
-    
-}
-.image-head
-{
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50%;
-    color: #000000;
-    font-weight: bold;
-}
-.image-sub
-{
-    font-size: 1rem;
-    color: #707070;
-}
-.right-banner
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    font-size: 1.2rem;
-    color: #1a47ff;
-    font-size: 1rem;
-    background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 102% no-repeat;
 }
 
-.contact
-{
+.main-Head {
+    color: #ffffff;
+    padding-left: 2rem;
+    font-weight: 700;
     margin-top: 1rem;
-    color: #000000;
-    font-size: 1.2rem;
 }
-@media (min-width:720px)
-{
-    .second-header
-    {
-        width: 50%;
-        font-size: 1.4rem;
-    }
-    .second-sub{
-    
-      font-size: 1.1rem;
-         
-    }
-    .content-second
-    {
-        font-size: 1.6rem;
-        width: 70%;
-    }
-    .content-par{
-        font-size: 1rem;
-        width: 50%;
-    }
-   .second-section
-   {
-    flex-direction: row;
-    width: 97%;
-    justify-content: space-around;
-    margin-top: 3rem;
-    
-   }
-.secondpic1
-{
-    margin-top: 3rem;
-}
-.secondpic3
-{
-    margin-top:3rem;
-}
-.second1-content
-{
-    width: 70%;
-    font-size: 1.5rem;
-}
-.imag-section
-{
-    width: 150%;
-    height: 400px;
-    background-size: 55%;
-}
-.image-full{
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    font-size: 1rem;
-}
-.right-banner{
-    font-size: .9rem;
-    width: 90%;
-    background-size: 20%;
-}
-.contact
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
+
+.main-Sub {
     font-size: 2rem;
 }
+
+.main-Header {
+    display: none;
 }
 
-@media (min-width:1200px)
-{
-    .second-header
-    {
-        font-size: 2rem;
-    }
-    .second-sub{
-        font-size: 1.5rem;
-    }
-    .second-section
-    { 
+.btn1 {
+    display: flex;
+    margin-top: 4rem;
+    gap: 10px;
+    padding-left: 2rem;
+    height: 40px;
+}
 
-        width: 100%;
+.account {
+    border-radius: 1rem;
+    color: #1f2024;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.demo {
+    border-radius: 1rem;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.section1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 3rem 0 0;
+}
+
+.full-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+}
+
+.parr {
+    display: none;
+}
+
+.left-Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.left2 {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 2rem;
+    padding-left: 35%;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.right-Section {
+    display: flex;
+    margin: 4rem;
+    width: 250px;
+    background: url("/assessts/images/Group%205.svg") no-repeat;
+    height: 180px;
+    background-size: 90%;
+}
+
+@media (min-width:720px) {
+    .logoPic {
+        width: 50px;
+        height: 45px;
+        background-size: 75%;
+    }
+
+    .logo {
+        font-size: 1.6rem;
         margin-top: 2rem;
     }
-    .second-left1,.second-left2,
-    .second-right1,.second-right2
-    {
-        width: 120%;
-        height: 260px;
+
+    .menu {
+        display: flex;
+        font-size: 1.6rem;
+        gap: 20px;
     }
-    .secondpic,.secondpic1,.secondpic2,.secondpic3
-    {
-        width: 400px;
+
+    .main-Head {
+        font-size: 2.6rem;
+        margin-top: 2rem;
     }
-    .content-second{
+
+    .main-Sub {
         font-size: 2rem;
     }
-    .content-par
-    {
+
+    .main-Header {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 1.3rem;
+    }
+
+    .btn1 {
+        font-size: 1.6rem;
+        padding-left: 7rem;
+    }
+    .section2 {
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+
+    .parr {
+        margin-top: 2rem;
+        width: 65%;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+    .left-Section {
+        margin-left: 7%;
+    }
+
+    .left1 {
+        font-size: 1.5rem;
+        color: #464040;
+    }
+
+    .subLeft {
+        font-size: .9rem;
+        color: #464040;
+    }
+
+    .right-Section {
+        width: 550px;
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    .left2 {
+        margin-top: 2rem;
+        padding-left: 3rem;
+    }
+
+    .left-Banner {
+        font-size: 1.1rem;
+        color: #1a47ff;
+        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 55% no-repeat;
+    }
+}
+
+@media (min-width:1200px) {
+    .logoPic {
+        height: 60px;
+        border-radius: 1rem;
+        background-size: 95%;
+        margin-left: 8rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        font-weight: bold;
+    }
+
+    .menu {
+        gap: 25px;
+    }
+
+    .items {
+        margin: .5rem 0 0 2rem;
+        padding: 2rem;
+    }
+
+    .toggle-Button {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        width: 15%;
+        gap: 10px;
+        margin: 2rem 1rem 0 0;
+        font-size: 4rem;
+    }
+
+    .signUp {
+        background-color: #1a47ff;
+        color: #ffff;
+    }
+
+    .signIn {
+        background-color: #ffffff;
+        color: #1f2024;
+    }
+
+    .main-Head {
+        margin-top: 8rem;
+    }
+
+    .main-Sub {
+        font-size: 7rem;
+    }
+
+    .first-Section {
+        margin-right: 15%;
+    }
+
+    .main-Header {
+        margin-top: 1rem;
+        font-size: 2rem;
+        padding-left: 3rem;
+    }
+
+    .btn1 {
+        font-size: 1.8rem;
+        padding-right: 40%;
+        height: 45px;   
+    }
+
+    .section1 {
+        font-size: 3.5rem;
+    }
+
+    .section2 {
+        padding-right: 5%;
+    }
+
+    .parr {
+        width: 300px;
+        height: 150px;
+        padding-left: 3rem;
+        margin-top: 4rem;
+    }
+
+    .left-Section {
+        padding-right: 5%;
+    }
+
+    .left1 {
+        font-size: 1.7rem;
+    }
+
+    .subLeft {
         font-size: 1.4rem;
     }
-    .imag-section
-    {
-        background-size: 46%;
-        width: 150%;
+
+    .right-Section {
+        width: 700px;
         height: 400px;
     }
-    .imag-section{
-  background-size: 60%;
+
+    .left-Banner {
+        font-size: 1.5rem;
+        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 45% no-repeat;
     }
-    .right-banner{
-        font-size:1.2rem;
+
+    .left2 {
+        font-size: 1.8rem;
     }
-    .contact
-    {
-        width: 70%;
-        font-size: 2.5rem
+}
+
+@media (min-width:1500px) {
+    .btn1 {
+        padding-right: 43%;
+    }
+}
+
+/* SECOND SECTION */
+.container2 {
+    background-color: #F5F5F5;
+}
+
+.full-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #1F2024;
+    font-weight: 870;
+}
+
+.second-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #707070;
+}
+
+.second-left,
+.second-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-left1,
+.second-left2,
+.second-right2,
+.second-right1 {
+    border-radius: 2rem;
+    border: 1px;
+    width: 290px;
+    background-color: rgba(112, 112, 112, .2);
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.secondpic {
+    background: url("/assessts/images/624b0ff81cfe0f58c5ec933f_advertising-banners%25402x.webp.svg") 70% no-repeat;
+    width: 200px;
+    height: 190px;
+    margin: 2rem 2rem;
+}
+
+.secondpic1 {
+    background: url("/assessts/images/624c10fef8715f0c0d41fc33_social-content%25402x.webp.svg") 70% no-repeat;
+    width: 290px;
+    height: 190px;
+}
+
+.secondpic2 {
+    background: url("/assessts/images/624b0ff86b21e6d5ede6a890_email-marketing%25402x.png.svg") 70% no-repeat;
+    width: 200px;
+    height: 160px;
+    margin: 2rem 2rem;
+}
+
+.secondpic3 {
+    background: url("/assessts/images/624b0ff8de14f978040c0edd_personalized-images%25402x.webp.svg") 70% no-repeat;
+    width: 200px;
+    height: 160px;
+    margin: 2rem;
+}
+
+.second-content,
+.second-content1,
+.right-content,
+.right-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.content-head,
+.content-head1,
+.right-head,
+.right-head1 {
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+.content-sub,
+.second-sub,
+.right-sub,
+.right-sub1 {
+    color: #707070;
+    font-size: 1rem;
+}
+
+.seccond1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second1-head {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    color: #1F2024;
+    font-weight: 800;
+}
+
+.content-par {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    color: #707070;
+    margin-left: 2rem;
+}
+
+.image-full {
+    display: flex;
+    flex-direction: column;
+}
+
+.imag-section {
+    background: url("/assessts/images/624b0ff858ed5b5899f53b5d_scale-visual-marketing%25402x-p-500.webp.svg") no-repeat;
+    height: 370px;
+    margin-top: 2rem;
+    background-size: 100%;
+    margin-left: 4rem;
+}
+
+.image-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-right1 {
+    font-size: 1.6rem;
+    color: #1A47FF;
+    margin: 1rem 10px;
+}
+
+.image-head {
+    font-size: 1.5rem;
+    color: #1F2024;
+    margin-left: 3rem;
+}
+
+.image-sub {
+    font-size: 1rem;
+    margin: 0 30px;
+    color: #707070;
+}
+
+.right-banner {
+    margin: 0 30px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #1A47FF;
+    background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 58% no-repeat;
+}
+
+.contact {
+    font-size: 1.4rem;
+    margin: 0 60px;
+    padding: 1rem;
+}
+
+@media (min-width:720px) {
+    .second-header {
+        font-size: 3rem;
+    }
+
+    .second-sub {
+        font-size: 1.6rem;
+    }
+
+    .second-left1,
+    .second-left2,
+    .second-right1,
+    .second-right2 {
+        display: flex;
+        font-size: 1.4rem;
+        width: 350px;
+        height: 200px;
+    }
+
+    .second-left,
+    .second-right {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .secondpic1,
+    .secondpic {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+
+    .secondpic2 {
+        width: 200px;
+        margin: 4rem 2rem;
+    }
+
+    .content-sub1 {
+        font-size: 1rem;
+    }
+
+    .right-head,
+    .content-head,
+    .content-head1,
+    .right-head1 {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .right-sub,
+    .content-sub1,
+    .content-sub,
+    .right-sub1 {
+        font-size: 1.2rem;
+    }
+
+    .imag-section {
+        width: 780px;
+        height: 350px;
+        margin: 0 30px;
+    }
+
+    .image-full {
+        flex-direction: row;
+    }
+
+    .image-right {
+        margin-top: 9rem;
+    }
+
+    .image-head {
+        font-weight: 800;
+        font-size: 1.4rem;
+        padding-right: 6rem;
+    }
+
+    .image-sub {
+        font-size: 1.2rem;
+    }
+
+    .right-banner {
+        background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 100% no-repeat;
+        margin-top: 1rem;
+    }
+
+    .contact {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:1200px) {
+    .second-sub {
+        font-size: 1.4rem;
+    }
+
+    .second-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .second-left1,
+    .second-left2 {
+        width: 470px;
+        height: 220px;
+    }
+
+    .second-right1,
+    .second-right2 {
+        width: 470px;
+    }
+
+    .secondpic2 {
+        margin: 4rem 2rem;
+    }
+
+    .second1-head {
+        align-items: flex-start;
+        padding-left: 5rem;
+        margin-top: 5rem;
+        font-size: 5rem;
+    }
+
+    .content-par {
+        font-size: 1.6rem;
+        align-items: flex-start;
+        padding-left: 5rem;
+    }
+
+    .image-right {
+        font-size: 1.6rem;
+    }
+
+    .imag-section {
+        width: 570px;
+        height: 450px;
+        margin: 0 70px;
+    }
+
+    .image-head {
+        font-size: 1.8rem;
+        margin: 0 10px;
+    }
+
+    .image-sub {
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+
+    .right-banner {
+        margin: 0 10px;
+        background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 40% no-repeat;
+        font-weight: 400;
+        padding: 1rem 0;
+    }
+
+    .contact {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+}
+
+/* THIRD SECTION */
+.container3 {
+    background-color: #707070;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-left,
+.form-rightinput {
+    display: flex;
+    flex-direction: column;
+    padding: 0 44px;
+}
+
+.form-left {
+    background: url("/assessts/images/contact-1920x1080%201%20(1).svg") no-repeat;
+    background-size: 100%;
+}
+
+.form-rightinput {
+    background: url("/assessts/images/contact-1920x1080%202.svg") no-repeat;
+    background-size: 100%;
+}
+
+.form-left .input-text {
+    border: none;
+    border-bottom: 1px solid #8ED6FF;
+    background: transparent;
+    height: 40px;
+    padding: 28px;
+}
+
+.form-left .input-text:focus {
+    outline: none;
+}
+
+.form-left .input-text::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+.editing {
+    color: #f5f5f5;
+    margin-top: 1rem;
+    padding-left: 3rem;
+}
+
+.radio-container input {
+    border: 1px solid #8ED6FF;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    accent-color: #8ED6FF;
+
+}
+
+.editing-option {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.form-rightinput .input-text {
+    border: none;
+    border-bottom: 1px solid #8ED6FF;
+    background: transparent;
+    height: 40px;
+    padding: 28px;
+}
+
+.form-rightinput .input-text:focus {
+    outline: none;
+}
+
+.form-rightinput .input-text::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+.check-area textarea {
+    border: 1px solid #8ED6FF;
+    border-radius: 2rem;
+    padding: 2rem 0 2rem 2rem;
+    margin-top: 2rem;
+    background: transparent;
+}
+
+.header2 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: #f5f5f5;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn2 input {
+    width: 100px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.send {
+    border-radius: 1rem;
+    color: #f5f5f5;
+    background-color: #8ED6FF;
+    border: 1px solid #8ED6FF;
+    margin: 2rem 0 2rem 0;
+}
+
+.cancel {
+    border-radius: 1rem;
+    color: #f5f5f5;
+    background-color: transparent;
+    border: 2px solid #8ED6FF;
+    margin: 2rem 0 2rem 0;
+}
+
+@media (min-width:720px) {
+    .container3 {
+        padding: 10%;
+    }
+
+    .form-container {
+        flex-direction: row;
+        background: url("/assessts/images/contact-1920x1080%201.svg") no-repeat;
+    }
+
+    .form-left,
+    .form-rightinput {
+        margin: 43px 0;
+        width: 100%;
+        background: none;
+    }
+
+    .btn2 {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .form-container {
+        background-size: 100%;
+        padding: 50px 20px;
+    }
+}
+
+/* FOURTH SECTION */
+.container4 {
+    background: #000000;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+}
+
+.headerpic1 {
+    display: flex;
+    padding-top: 90%;
+    padding-left: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    margin-top: 1rem;
+}
+
+.footer-head {
+    display: none;
+}
+
+.content1 {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    padding-left: 2rem;
+}
+
+.logopic1 {
+    width: 50px;
+    height: 40px;
+    background: url("/assessts/images/div.svg") 19% no-repeat;
+    margin-bottom: 4rem;
+}
+
+.logo1 {
+    font-size: 1.6rem;
+    color: #2a55ff;
+    padding-left: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+@media (min-width:720px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .headerpic1 {
+        padding-top: 1rem;
+    }
+
+    .footer-content {
+        margin-top: 3rem;
+    }
+
+    .footer-sub,
+    .footer-su,
+    .footer-sub11,
+    .footer-su11,
+    .footer-subj {
+        font-size: 1.5rem;
+        color: #98A2B3;
+        margin: 2rem 0 0 2rem;
+    }
+
+    .footer-sub1,
+    .footer-su1,
+    .footer-sub12,
+    .footer-su12,
+    .footer-subj1 {
+        font-size: 1.3rem;
+        color: #EAECF0;
+        margin: 1rem 0 0 2rem;
+    }
+
+    .footer-full,
+    .footer-head {
+        display: flex;
+    }
+}
+
+@media (min-width:1200px) {
+    .footer-content {
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+
+    .footer-head {
+        gap: 4rem;
+    }
+
+    .footer-head1 {
+        padding-left: 5rem;
+    }
+
+    .footer-gg {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .footer-head {
+        padding-bottom: 3rem;
+    }
+
+    .container4 {
+        padding-left: 8%;
+    }
+
+    .new {
+        border-radius: 2rem;
     }
 }
