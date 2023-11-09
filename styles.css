@@ -17,104 +17,81 @@ body {
     margin: auto;
 }
 
-/* .main-container */
-/* { */
-/* width: 100%; */
-/* } */
-.container1 {
-    width: 100%;
+.top-container {
     background-color: #1F2024;
 }
+.top-container2 {
+    background-color: #707070;
+}
 
+.top-container3 {
+    background-color: #000000;
+}
+.font-Main
+{
+    font-size: 1.5rem;
+}
+.col-Main
+{
+    display: flex;
+    flex-direction: column;
+}
+.row-Main
+{
+    display: flex;
+}
 .header {
-    display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
+    align-items: center;
+   
 }
-
-.headerPic {
-    display: flex;
-}
-
 .logoPic {
-    width: 33px;
-    height: 33px;
+    width: 3rem;
+    height: 3rem;
     background: url("/assessts/images/div.svg") 19% no-repeat;
     border-radius: 2rem;
     margin: 1rem 0 0 1rem;
 }
-
 .logo {
     margin: 1.5rem 0 0 1.5rem;
     color: #2a55ff;
-    font-size: 1.5rem;
 }
-
 .menu {
     display: none;
 }
-
 .items {
     margin-top: 2rem;
     color: #ffffff;
 }
-
 .btn {
     display: none;
 }
-
 .toggle-Button {
-    display: flex;
-    flex-direction: column;
     padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    color: #ffffff;
 }
-
-.bar {
-    width: 25px;
-    height: 5px;
-    background-color: #ffffff;
-    margin-top: 1px;
-}
-
 .signIn,
 .signUp {
-
     border-radius: 1rem;
     border: 1px;
-    width: 40%;
-    height: 80%;
+    width: 7rem;
+    height: 4rem;
 }
-
-.first-Section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-Head {
-    color: #ffffff;
-    padding-left: 2rem;
-    font-weight: 700;
-    margin-top: 1rem;
-}
-
 .main-Sub {
-    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.6rem;
 }
-
 .main-Header {
     display: none;
 }
-
 .btn1 {
-    display: flex;
-    margin-top: 4rem;
-    gap: 10px;
-    padding-left: 2rem;
+    margin-top: 8rem;
+    gap: 20px;
     height: 40px;
 }
-
 .account {
     border-radius: 1rem;
     color: #1f2024;
@@ -127,180 +104,150 @@ body {
     border: 2px solid #ffffff;
     background-color: #000000;
     color: #ffffff;
+   
 }
-
-.section1 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    margin: 3rem 3rem 0 0;
-}
-
-.full-Section {
-    display: flex;
-    justify-content: center;
+.first-Section
+{
     align-items: center;
 }
-
-.section2 {
+.section1 {
+    color: #ffffff;
     display: flex;
+    justify-content: center;
+    margin: 3rem 3rem 2rem 3rem;
+    font-weight: 800;
+}
+.full-Section{
+    justify-content: center;
+}
+.section2 {
     flex-direction: column-reverse;
     margin-bottom: 2rem;
+    align-items: center;   
 }
-
 .parr {
     display: none;
 }
-
-.left-Section {
-    display: flex;
-    flex-direction: column;
-}
-
 .left2 {
-    display: flex;
-    flex-direction: column;
     color: #ffffff;
     gap: 2rem;
-    padding-left: 35%;
-    font-size: 1.6rem;
+   align-items: center;
     margin-bottom: 2rem;
     font-weight: 800;
 }
-
 .right-Section {
-    display: flex;
-    margin: 4rem;
-    width: 250px;
-    background: url("/assessts/images/Group%205.svg") no-repeat;
-    height: 180px;
-    background-size: 90%;
+    background: url("/assessts/images/Group%205.svg")  90% no-repeat;
+    width: 12rem;
+    height: 18rem ;
 }
+
 
 @media (min-width:720px) {
     .logoPic {
-        width: 50px;
-        height: 45px;
+        width: 4rem;
+        height: 4rem;
         background-size: 75%;
     }
 
     .logo {
-        font-size: 1.6rem;
-        margin-top: 2rem;
+        margin:2.1rem 0 0rem 0;
     }
 
     .menu {
         display: flex;
-        font-size: 1.6rem;
         gap: 20px;
     }
-
-    .main-Head {
-        font-size: 2.6rem;
-        margin-top: 2rem;
-    }
-
-    .main-Sub {
-        font-size: 2rem;
-    }
-
-    .main-Header {
+      .main-Header {
         display: flex;
         flex-direction: column;
         color: #ffffff;
-        font-weight: 100;
-        font-size: 1.3rem;
     }
-
-    .btn1 {
-        font-size: 1.6rem;
-        padding-left: 7rem;
+    .first-Section {
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    .account,
+    .demo
+    {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+    .left-Sub{
+        margin-top: 1rem;
     }
     .section2 {
         flex-direction: row;
-        margin-bottom: 3rem;
+        gap: 40px;
     }
-
     .parr {
         margin-top: 2rem;
-        width: 65%;
         background-color: #ffffff;
         border-radius: 1rem;
         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        justify-content: center;
-        font-size: 1.3rem;
+        width: 250px;   
+        flex: 1rem;
     }
-
-    .left-Section {
-        margin-left: 7%;
-    }
-
     .left1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: #464040;
+        font-weight: 600;
+        padding-bottom: 1rem;
     }
-
     .subLeft {
         font-size: .9rem;
         color: #464040;
     }
-
     .right-Section {
-        width: 550px;
-        height: 300px;
-        margin-top: 2rem;
+          width: 320px;
+        height: 300px;  
+        flex: 1; 
     }
-
-    .left2 {
-        margin-top: 2rem;
-        padding-left: 3rem;
-    }
-
-    .left-Banner {
-        font-size: 1.1rem;
+  .left-Banner {
+        font-size: 1.5rem;
         color: #1a47ff;
         background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 55% no-repeat;
+        margin-top: 1rem;
     }
 }
 
 @media (min-width:1200px) {
+    .header{
+        padding-top: 3rem;
+    }
     .logoPic {
-        height: 60px;
+        height: 6rem;
+        width: 6rem;
         border-radius: 1rem;
         background-size: 95%;
-        margin-left: 8rem;
+        margin-left: 6rem;
     }
-
-    .logo {
+  .logo {
         font-size: 2rem;
-        margin-top: 2.5rem;
-        font-weight: bold;
+        margin-top: 1.7rem;
+        padding-left: 1rem;
     }
-
-    .menu {
-        gap: 25px;
-    }
-
-    .items {
+   .items {
         margin: .5rem 0 0 2rem;
         padding: 2rem;
     }
-
     .toggle-Button {
         display: none;
     }
 
     .btn {
         display: flex;
-        width: 15%;
         gap: 10px;
-        margin: 2rem 1rem 0 0;
         font-size: 4rem;
+        padding-right: 4rem;
     }
-
+    .main-Head{
+       padding-top: 4rem;
+    }
+    .main-Sub
+    {
+        font-size: 8rem;
+    }
     .signUp {
         background-color: #1a47ff;
         color: #ffff;
@@ -310,26 +257,7 @@ body {
         background-color: #ffffff;
         color: #1f2024;
     }
-
-    .main-Head {
-        margin-top: 8rem;
-    }
-
-    .main-Sub {
-        font-size: 7rem;
-    }
-
-    .first-Section {
-        margin-right: 15%;
-    }
-
-    .main-Header {
-        margin-top: 1rem;
-        font-size: 2rem;
-        padding-left: 3rem;
-    }
-
-    .btn1 {
+.btn1 {
         font-size: 1.8rem;
         padding-right: 40%;
         height: 45px;   
@@ -338,654 +266,565 @@ body {
     .section1 {
         font-size: 3.5rem;
     }
-
-    .section2 {
-        padding-right: 5%;
+    .section2
+    {
+        padding-left: 6%;
     }
-
     .parr {
         width: 300px;
-        height: 150px;
-        padding-left: 3rem;
-        margin-top: 4rem;
     }
-
-    .left-Section {
-        padding-right: 5%;
-    }
-
-    .left1 {
-        font-size: 1.7rem;
-    }
-
     .subLeft {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .right-Section {
         width: 700px;
-        height: 400px;
+        height: 500px;
     }
-
-    .left-Banner {
-        font-size: 1.5rem;
-        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 45% no-repeat;
-    }
-
     .left2 {
-        font-size: 1.8rem;
+      align-items: flex-start;
+      margin: 4rem  0 0 2rem;
+        font-size: 2rem;
+        row-gap: 60px;
     }
 }
-
-@media (min-width:1500px) {
-    .btn1 {
-        padding-right: 43%;
-    }
-}
-
-/* SECOND SECTION */
-.container2 {
-    background-color: #F5F5F5;
-}
-
-.full-second {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.second-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    font-size: 1rem;
-    color: #1F2024;
-    font-weight: 870;
-}
-
-.second-sub {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-    color: #707070;
-}
-
-.second-left,
-.second-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.second-left1,
-.second-left2,
-.second-right2,
-.second-right1 {
-    border-radius: 2rem;
-    border: 1px;
-    width: 290px;
-    background-color: rgba(112, 112, 112, .2);
-    margin: 2rem 2rem 2rem 2rem;
-}
-
-.secondpic {
-    background: url("/assessts/images/624b0ff81cfe0f58c5ec933f_advertising-banners%25402x.webp.svg") 70% no-repeat;
-    width: 200px;
-    height: 190px;
-    margin: 2rem 2rem;
-}
-
-.secondpic1 {
-    background: url("/assessts/images/624c10fef8715f0c0d41fc33_social-content%25402x.webp.svg") 70% no-repeat;
-    width: 290px;
-    height: 190px;
-}
-
-.secondpic2 {
-    background: url("/assessts/images/624b0ff86b21e6d5ede6a890_email-marketing%25402x.png.svg") 70% no-repeat;
-    width: 200px;
-    height: 160px;
-    margin: 2rem 2rem;
-}
-
-.secondpic3 {
-    background: url("/assessts/images/624b0ff8de14f978040c0edd_personalized-images%25402x.webp.svg") 70% no-repeat;
-    width: 200px;
-    height: 160px;
-    margin: 2rem;
-}
-
-.second-content,
-.second-content1,
-.right-content,
-.right-content1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-}
-
-.content-head,
-.content-head1,
-.right-head,
-.right-head1 {
-    color: #000000;
-    font-size: 1.4rem;
-}
-
-.content-sub,
-.second-sub,
-.right-sub,
-.right-sub1 {
-    color: #707070;
-    font-size: 1rem;
-}
-
-.seccond1-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.second1-head {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6rem;
-    padding-left: 4rem;
-    color: #1F2024;
-    font-weight: 800;
-}
-
-.content-par {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    padding-left: 3rem;
-    color: #707070;
-    margin-left: 2rem;
-}
-
-.image-full {
-    display: flex;
-    flex-direction: column;
-}
-
-.imag-section {
-    background: url("/assessts/images/624b0ff858ed5b5899f53b5d_scale-visual-marketing%25402x-p-500.webp.svg") no-repeat;
-    height: 370px;
-    margin-top: 2rem;
-    background-size: 100%;
-    margin-left: 4rem;
-}
-
-.image-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-right1 {
-    font-size: 1.6rem;
-    color: #1A47FF;
-    margin: 1rem 10px;
-}
-
-.image-head {
-    font-size: 1.5rem;
-    color: #1F2024;
-    margin-left: 3rem;
-}
-
-.image-sub {
-    font-size: 1rem;
-    margin: 0 30px;
-    color: #707070;
-}
-
-.right-banner {
-    margin: 0 30px;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    color: #1A47FF;
-    background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 58% no-repeat;
-}
-
-.contact {
-    font-size: 1.4rem;
-    margin: 0 60px;
-    padding: 1rem;
-}
-
-@media (min-width:720px) {
-    .second-header {
-        font-size: 3rem;
-    }
-
-    .second-sub {
-        font-size: 1.6rem;
-    }
-
-    .second-left1,
-    .second-left2,
-    .second-right1,
-    .second-right2 {
-        display: flex;
-        font-size: 1.4rem;
-        width: 350px;
-        height: 200px;
-    }
-
-    .second-left,
-    .second-right {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .secondpic1,
-    .secondpic {
-        padding: 2rem 2rem 2rem 4rem;
-    }
-
-    .secondpic2 {
-        width: 200px;
-        margin: 4rem 2rem;
-    }
-
-    .content-sub1 {
-        font-size: 1rem;
-    }
-
-    .right-head,
-    .content-head,
-    .content-head1,
-    .right-head1 {
-        font-size: 1.5rem;
-        padding: 0 1rem;
-    }
-
-    .right-sub,
-    .content-sub1,
-    .content-sub,
-    .right-sub1 {
-        font-size: 1.2rem;
-    }
-
-    .imag-section {
-        width: 780px;
-        height: 350px;
-        margin: 0 30px;
-    }
-
-    .image-full {
-        flex-direction: row;
-    }
-
-    .image-right {
-        margin-top: 9rem;
-    }
-
-    .image-head {
-        font-weight: 800;
-        font-size: 1.4rem;
-        padding-right: 6rem;
-    }
-
-    .image-sub {
-        font-size: 1.2rem;
-    }
-
-    .right-banner {
-        background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 100% no-repeat;
-        margin-top: 1rem;
-    }
-
-    .contact {
-        font-size: 1.6rem;
-        display: flex;
-        flex-direction: column;
+ /* SECOND SECTION  */
+     .full-Second {
         align-items: center;
+    }   
+     
+    .second-Header {
+        align-items: center;
+        margin-top: 3rem;
+        font-size: 1.3rem;
+        color: #1F2024;
+        font-weight: 870;
     }
-}
-
-@media (min-width:1200px) {
-    .second-sub {
+   .second-Sub1
+   {
+    text-align: center;
+    color: #707070;
+    font-size: .9rem;
+   }
+    .second-Left,
+    .second-Right {
+        align-items: center;
+     }  
+    
+     .second-Left1,
+    .second-Left2,
+    .second-Right2,
+    .second-Right1 {
+        border-radius: 2rem;
+        border: 1px;
+        width: 300px;
+        background-color: rgba(112, 112, 112, .2);
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    
+    .secondPic {
+        background: url("/assessts/images/624b0ff81cfe0f58c5ec933f_advertising-banners%25402x.webp.svg") 70% no-repeat;
+        height: 190px;
+        margin: 2rem 2rem;
+    }
+    
+    .secondPic1 {
+        background: url("/assessts/images/624c10fef8715f0c0d41fc33_social-content%25402x.webp.svg") 70% no-repeat;
+        height: 190px;
+    } 
+    
+     .secondPic2 {
+        background: url("/assessts/images/624b0ff86b21e6d5ede6a890_email-marketing%25402x.png.svg") 70% no-repeat;
+        width: 220px;
+        height: 160px;
+        margin: 2rem 2rem;
+    } 
+    
+     .secondPic3 {
+        background: url("/assessts/images/624b0ff8de14f978040c0edd_personalized-images%25402x.webp.svg") 70% no-repeat;
+        height: 160px;
+        margin: 2rem;
+    }
+    
+    .second-Content,
+    .second-Content1,
+    .right-Content,
+    .right-Content1 {
+        justify-content: center;
+        align-items: center;  
+        padding-bottom: 1rem;
+    } 
+    
+     .content-Head,
+    .content-Head1,
+    .right-Head,
+    .right-Head1 {
+        color: #000000;
         font-size: 1.4rem;
-    }
-
-    .second-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .second-left1,
-    .second-left2 {
-        width: 470px;
-        height: 220px;
-    }
-
-    .second-right1,
-    .second-right2 {
-        width: 470px;
-    }
-
-    .secondpic2 {
-        margin: 4rem 2rem;
-    }
-
-    .second1-head {
-        align-items: flex-start;
-        padding-left: 5rem;
-        margin-top: 5rem;
-        font-size: 5rem;
-    }
-
-    .content-par {
-        font-size: 1.6rem;
-        align-items: flex-start;
-        padding-left: 5rem;
-    }
-
-    .image-right {
-        font-size: 1.6rem;
-    }
-
-    .imag-section {
-        width: 570px;
-        height: 450px;
-        margin: 0 70px;
-    }
-
-    .image-head {
-        font-size: 1.8rem;
-        margin: 0 10px;
-    }
-
-    .image-sub {
-        font-size: 1.4rem;
-        margin: 0 10px;
-    }
-
-    .right-banner {
-        margin: 0 10px;
-        background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 40% no-repeat;
-        font-weight: 400;
-        padding: 1rem 0;
-    }
-
-    .contact {
-        font-size: 5rem;
         font-weight: 600;
     }
-}
-
-/* THIRD SECTION */
-.container3 {
-    background-color: #707070;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-left,
-.form-rightinput {
-    display: flex;
-    flex-direction: column;
-    padding: 0 44px;
-}
-
-.form-left {
-    background: url("/assessts/images/contact-1920x1080%201%20(1).svg") no-repeat;
-    background-size: 100%;
-}
-
-.form-rightinput {
-    background: url("/assessts/images/contact-1920x1080%202.svg") no-repeat;
-    background-size: 100%;
-}
-
-.form-left .input-text {
-    border: none;
-    border-bottom: 1px solid #8ED6FF;
-    background: transparent;
-    height: 40px;
-    padding: 28px;
-}
-
-.form-left .input-text:focus {
-    outline: none;
-}
-
-.form-left .input-text::placeholder {
-    color: #fff;
-    opacity: .5;
-}
-
-.editing {
-    color: #f5f5f5;
-    margin-top: 1rem;
-    padding-left: 3rem;
-}
-
-.radio-container input {
-    border: 1px solid #8ED6FF;
-    border-radius: 1rem;
-    margin-top: 2rem;
-    accent-color: #8ED6FF;
-
-}
-
-.editing-option {
-    margin-bottom: 2rem;
-    padding-left: 3rem;
-}
-
-.form-rightinput .input-text {
-    border: none;
-    border-bottom: 1px solid #8ED6FF;
-    background: transparent;
-    height: 40px;
-    padding: 28px;
-}
-
-.form-rightinput .input-text:focus {
-    outline: none;
-}
-
-.form-rightinput .input-text::placeholder {
-    color: #fff;
-    opacity: .5;
-}
-
-.check-area textarea {
-    border: 1px solid #8ED6FF;
-    border-radius: 2rem;
-    padding: 2rem 0 2rem 2rem;
-    margin-top: 2rem;
-    background: transparent;
-}
-
-.header2 {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    color: #f5f5f5;
-}
-
-.btn2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.btn2 input {
-    width: 100px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-.send {
-    border-radius: 1rem;
-    color: #f5f5f5;
-    background-color: #8ED6FF;
-    border: 1px solid #8ED6FF;
-    margin: 2rem 0 2rem 0;
-}
-
-.cancel {
-    border-radius: 1rem;
-    color: #f5f5f5;
-    background-color: transparent;
-    border: 2px solid #8ED6FF;
-    margin: 2rem 0 2rem 0;
-}
-
-@media (min-width:720px) {
-    .container3 {
-        padding: 10%;
+    
+    .content-Sub,
+    .second-Sub,
+    .right-Sub,
+    .right-Sub1 {
+        color: #707070;
+        font-size: 1rem;
+       
+    }  
+    .second1-Head {
+        align-items: center;
+        font-size: 1.6rem;
+        padding-left: 3rem;
+        color: #1F2024;
+        font-weight: 800;
+        margin-top: 2rem;
     }
-
-    .form-container {
-        flex-direction: row;
-        background: url("/assessts/images/contact-1920x1080%201.svg") no-repeat;
+    
+    .content-Par{
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 3rem;
+        color: #707070;
+    } 
+     .imag-Section {
+        background: url("/assessts/images/624b0ff858ed5b5899f53b5d_scale-visual-marketing%25402x-p-500.webp.svg") no-repeat;
+        height: 200px;
+        margin-top: 2rem;
+        background-size: contain;
+        margin-left: 3rem;
     }
-
-    .form-left,
-    .form-rightinput {
-        margin: 43px 0;
-        width: 100%;
-        background: none;
+    
+    .image-Right {
+        align-items: center;
     }
-
-    .btn2 {
-        flex-direction: row;
+    
+    .image-Right1 {
+        color: #1A47FF;
+        margin-top: 2rem;
+        font-weight: 500;
+    }  
+    .image-Head {
+        color: #1F2024;   
     }
-}
+    
+    .image-Sub {
+        font-size: .8rem;
+        color: #707070;
+    }
+    
+    .right-Banner {
+       padding-right: 2rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: #1A47FF;
+        background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 100% no-repeat;
+    }
+     .contact {
+        font-size: 1.4rem;
+        margin: 0 60px;
+        padding: 1rem;
+        font-weight: 600;
+    } 
+    
+    @media (min-width:720px) {
+        .second-Header {
+            font-size: 3rem;
+        }
+        .second-Left1,
+        .second-Left2
+        {
+            display: flex;
+            font-size: 1.4rem;
+           width: 340px ;
+        }
+        .second-Right1,
+        .second-Right2 {
+            display: flex;
+            font-size: 1.4rem;
+            width: 350px;
+        } 
+    
+        .second-Left,
+        .second-Right {
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        .second-Content,
+        .second-Content1,
+        .right-Content,
+        .right-Content1
+        {
+            align-items: flex-start;
+            padding-right: 3rem;
+        }
+        .secondPic1
+        {
+            width: 270px;
+            padding-left: 38%;
+        } 
+         .secondPic {
+            width: 250px;
+            height: 150px;
+        } 
+         .second-Right1{
+         height: 170px;
+        }
+        .secondPic2
+        ,.secondPic3 {
+            width: 200px;
+            margin: 1rem 1rem;
+        }
+        .second1-Head{
+            align-items: flex-start;
+            padding-top: 4rem;
+        }
+        .content-Par
+        {
+            align-items: flex-start;
+            font-size: 1rem;
+            font-weight: 500;
+        } 
+        .imag-Section {
+            width: 100%;
+            background-size: contain;
+            height: 350px;
+            margin: 0 30px;
+        } 
+    
+          .image-Full {
+            flex-direction: row;
+            padding-top: 4rem;
+        }
+    
+        .image-Right {
+           align-items: flex-start;
+           flex: 1 0 250px;
+        }
+    
+        .image-Head {
+            font-weight: 800;
+            font-size: 1.9rem;
+        }
+    
+        .image-Sub1 {
+        font-size: .8rem;
+        }
+    
+        .right-Banner {
+            background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 100% no-repeat;
+            margin-top: 1rem;
+        }
+    
+        .contact {
+            font-size: 1.6rem;
+            align-items: center;
+        } 
+         .second-Sub1 {
+            font-size: 1.2rem;
+           max-width: 55%;
+           align-items: center;
+        } 
+     }
+     @media (min-width:1200px) {
+        .second-Header
+        {
+            justify-content: flex-start;
+            margin-left: 1rem;
+            font-size: 4.5rem;
+            margin-top: 6rem;
+        }
+       .second-Section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 3rem;
+        }
+        .container-Box{
+            margin-left: 10%;
+        } 
+        .second-Left1,
+        .second-Left2 {
+            width: 470px;
+            height: 220px;
+        }
+        .second-Right1,
+        .second-Right2 {
+            width: 470px;
+            height: 200px;
+        }
+    
+         .secondPic2 {
+            margin: 4rem 2rem;
+        }
+    
+        .second1-Head {
+            margin: 5rem 0 0 4rem;
+            font-size: 6.5rem;
+        }
+    
+        .content-Par1 {
+            font-size: 2rem;
+            padding-left: 4rem;
+        } 
+    
+        .imag-Section {
+            width: 570px;
+            margin: 0 70px;
+        }
+         .image-Right {
+            flex-basis: 450px;
+        }  
+      .image-Right1
+        {
+           padding-top: 2rem;
+        font-size: 2rem;
+        }
+        .image-Head {
+            font-size: 5.5rem;
+          }
+        .image-Sub1 {
+            font-size:1.2rem; 
 
-@media (min-width:1200px) {
-    .form-container {
+        }
+      .right-Banner {
+            background: url("/assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 50% no-repeat;
+            font-weight: 800;
+           padding-right: 50%;
+        }
+    .contact {
+            font-size: 5rem;
+            
+        }  
+    }  
+      @media (min-width:1500px)
+    {
+        .second-Left,
+        .second-Right
+        {
+            margin-right: 18%;
+        }
+            } 
+    /* THIRD SECTION  */
+    
+     .container3 {
+        background-color: #707070;
+    } 
+    .form-Left,
+    .form-Rightinput { 
+        padding: 0 35px; 
+    }  
+
+    .form-Left {
+        background: url("/assessts/images/contact-1920x1080%201%20(1).svg") no-repeat;
         background-size: 100%;
-        padding: 50px 20px;
+        border-right: 1px solid #8ED6FF !important;
     }
-}
-
-/* FOURTH SECTION */
-.container4 {
-    background: #000000;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 4rem;
-}
-
-.headerpic1 {
-    display: flex;
-    padding-top: 90%;
-    padding-left: 2rem;
-    margin-top: 4rem;
-}
-
-.footer-content {
-    margin-top: 1rem;
-}
-
-.footer-head {
-    display: none;
-}
-
-.content1 {
-    font-size: 1.5rem;
-    color: #f5f5f5;
-    padding-left: 2rem;
-}
-
-.logopic1 {
-    width: 50px;
-    height: 40px;
-    background: url("/assessts/images/div.svg") 19% no-repeat;
-    margin-bottom: 4rem;
-}
-
-.logo1 {
-    font-size: 1.6rem;
-    color: #2a55ff;
-    padding-left: 1rem;
-    font-weight: 700;
-    margin-top: 1rem;
-}
-
-@media (min-width:720px) {
-    .footer {
-        flex-direction: column;
+    
+    .form-Rightinput {
+        background: url("/assessts/images/contact-1920x1080%202.svg") no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
-
-    .headerpic1 {
-        padding-top: 1rem;
+  
+    .form-Left .input-text {
+        border: none;
+        border-bottom: 1px solid #8ED6FF;
+        background: transparent;
+        padding: 3rem 1rem 3rem 3rem;
+        margin: 1 10px;
+    } 
+     .form-Left .input-text:focus {
+        outline: none;
     }
-
-    .footer-content {
+    
+    .form-Left .input-text::placeholder {
+        color: #fff;
+        opacity: .5;
+    } 
+    
+     .editing {
+        color: #f5f5f5;
+        margin-top: 1rem;
+    }
+    
+    .radio-Container input {
+        border: 1px solid #8ED6FF;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        accent-color: #8ED6FF; 
+    
+     } 
+     .editing-Option {
+        margin-bottom: 2rem;
+    }
+    
+    .form-Rightinput .input-text {
+        border: none;
+        border-bottom: 1px solid #8ED6FF;
+        background: transparent;
+        padding: 3rem 1rem 3rem 3rem;
+        margin: 1 10px;
+    }
+    
+    .form-Rightinput .input-text:focus { outline: none;
+    }
+    
+    .form-Rightinput .input-text::placeholder {
+        color: #fff;
+        opacity: .5;
+    } 
+     
+      .check-Area textarea {
+       outline: none;
+        border: 1px solid #8ED6FF;
+        border-radius: 2rem;
+        padding: 2rem 2rem 2rem 2rem;
+        width: 100%;
         margin-top: 3rem;
+        background: transparent;
+    }
+    
+    .header2 {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        color: #f5f5f5;
+    }
+    
+    .btn2 {
+        align-items: center;
+    }  
+    
+      .btn2 input {
+        width: 130px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    .send {
+        border-radius: 1rem;
+        color: #f5f5f5;
+        background-color: #8ED6FF;
+        border: 1px solid #8ED6FF;
+        margin: 2rem 0 2rem 0;
+    }
+    
+    .cancel {
+        border-radius: 1rem;
+        color: #f5f5f5;
+        background-color: transparent;
+        border: 2px solid #8ED6FF;
+        margin: 1rem 0 1rem 0;
+    } 
+      @media (min-width:720px) {
+        .container3 {
+            padding: 50px;
+        }
+    
+        .form-Container {
+            flex-direction: row;
+            background: url("/assessts/images/contact-1920x1080%201.svg") no-repeat;
+        } 
+         .form-Left,
+        .form-Rightinput {
+            flex: 1;
+            background: none;
+        }
+        .btn2 {
+            flex-direction: row;
+            padding-top: 4rem;
+        }
+    }   
+@media (min-width:1200px) {
+    .container3 {
+        padding: 5% 7%;
     }
 
-    .footer-sub,
-    .footer-su,
-    .footer-sub11,
-    .footer-su11,
-    .footer-subj {
+    .form-Container {
+        background-size: 100%;  
+    }
+   
+}   
+@media (min-width:1500px){
+    .form-Container {
+        padding: 5% 8%; 
+    }
+}
+      /*FOURTH SECTION  */
+ 
+     .footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-Head {
+        align-items: center;
+    }  
+    .footer-Head2,
+    .footer-Head3,
+    .footer-Head4,
+    .footer-Head5
+    {
+        padding-right: 2rem;
+    }
+    .footer-Sub,
+    .footer-Su,
+    .footer-Sub11,
+    .footer-Su11,
+    .footer-Subj {
         font-size: 1.5rem;
         color: #98A2B3;
         margin: 2rem 0 0 2rem;
-    }
-
-    .footer-sub1,
-    .footer-su1,
-    .footer-sub12,
-    .footer-su12,
-    .footer-subj1 {
+    } 
+    
+    .footer-Sub1,
+    .footer-Su1,
+    .footer-Sub12,
+    .footer-Su12,
+    .footer-Subj1 {
         font-size: 1.3rem;
         color: #EAECF0;
         margin: 1rem 0 0 2rem;
     }
-
-    .footer-full,
-    .footer-head {
-        display: flex;
-    }
-}
-
-@media (min-width:1200px) {
-    .footer-content {
-        font-size: 1.6rem;
-        margin-top: 5rem;
-    }
-
-    .footer-head {
-        gap: 4rem;
-    }
-
-    .footer-head1 {
-        padding-left: 5rem;
-    }
-
-    .footer-gg {
-        padding-top: 2rem;
-        font-size: 1.6rem;
-    }
-
-    .footer-head {
-        padding-bottom: 3rem;
-    }
-
-    .container4 {
-        padding-left: 8%;
-    }
-
-    .new {
+    .content1 {
+        color: #f5f5f5;
+        padding: 2rem 0 0 2rem;
+        font-size: .8rem;
+    } 
+     .new {
         border-radius: 2rem;
     }
-}
+    
+    @media (min-width:720px)
+     {
+        .footer {
+            flex-direction: column;
+        }
+        .content1  {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .footer-Head{
+            flex-direction: row;
+           gap: 35px;
+           padding-bottom: 3rem;
+           line-height: 3rem;
+        }
+    } 
+    @media (min-width:1200px) 
+    {
+     .footer-Full
+        {
+            display: flex; 
+            padding-left: 7%;
+        }
+        .footer-Head{
+            padding-left: 4rem;
+            gap: 2.5rem;
+        }
+        .content1 {
+            margin-top: 4rem;
+            text-align: left;
+             width: 30%; 
+            font-size: 1.6rem;
+           }
+        }
