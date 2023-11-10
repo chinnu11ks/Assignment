@@ -112,18 +112,16 @@ body {
 }
 .section1 {
     color: #ffffff;
-    display: flex;
     justify-content: center;
     margin: 3rem 3rem 2rem 3rem;
     font-weight: 800;
 }
-.full-Section{
+.section2
+{
     justify-content: center;
-}
-.section2 {
-    flex-direction: column-reverse;
     margin-bottom: 2rem;
-    align-items: center;   
+    /* align-items: center; */
+    text-align: center;
 }
 .parr {
     display: none;
@@ -136,12 +134,10 @@ body {
     font-weight: 800;
 }
 .right-Section {
-    background: url("/assessts/images/Group%205.svg")  90% no-repeat;
-    width: 12rem;
-    height: 18rem ;
+    
+    width: 90%;
+    padding-left: 1rem;
 }
-
-
 @media (min-width:720px) {
     .logoPic {
         width: 4rem;
@@ -175,8 +171,10 @@ body {
         margin-top: 1rem;
     }
     .section2 {
-        flex-direction: row;
+        flex-direction: row-reverse;
         gap: 40px;
+        width: 100%;
+        padding-left: 8%;
     }
     .parr {
         margin-top: 2rem;
@@ -185,8 +183,7 @@ body {
         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         display: flex; 
         flex-direction: column;
-        width: 250px;   
-        flex: 1rem;
+        align-items: baseline;
     }
     .left1 {
         font-size: 1.6rem;
@@ -195,19 +192,27 @@ body {
         padding-bottom: 1rem;
     }
     .subLeft {
+       
         font-size: .9rem;
         color: #464040;
     }
     .right-Section {
-          width: 320px;
-        height: 300px;  
-        flex: 1; 
+        padding-right: 2rem;
+        flex: 2; 
     }
   .left-Banner {
+  
         font-size: 1.5rem;
         color: #1a47ff;
-        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 55% no-repeat;
+        background: url("assessts/images/621cedfa3feece8eec96a09e_arrow-link.svg.svg") 90% no-repeat;
         margin-top: 1rem;
+       
+    }
+    .left-Section{
+        padding-left: 4rem;
+        justify-content: space-around;
+        padding-bottom: 6rem;
+        /* flex: 1; */
     }
 }
 
@@ -252,40 +257,35 @@ body {
         background-color: #1a47ff;
         color: #ffff;
     }
-
     .signIn {
         background-color: #ffffff;
         color: #1f2024;
     }
 .btn1 {
         font-size: 1.8rem;
-        padding-right: 40%;
+        max-width: 40%;
         height: 45px;   
     }
 
     .section1 {
         font-size: 3.5rem;
     }
-    .section2
-    {
-        padding-left: 6%;
-    }
-    .parr {
-        width: 300px;
+    .parr{
+        margin-top: 4rem;
     }
     .subLeft {
-        font-size: 1.1rem;
+        font-size: 1.rem;
+        margin: 0 1rem;
     }
-
-    .right-Section {
-        width: 700px;
-        height: 500px;
+    .left-Section{
+        margin-bottom: 2.5rem;
     }
     .left2 {
       align-items: flex-start;
       margin: 4rem  0 0 2rem;
-        font-size: 2rem;
+        font-size: 3rem;
         row-gap: 60px;
+        flex-grow: 2;
     }
 }
  /* SECOND SECTION  */
@@ -697,8 +697,8 @@ body {
     }  
     
       .btn2 input {
-        width: 130px;
-        height: 30px;
+        width: 35%;
+        height: 55%;
         margin-right: 20px;
     }
     .send {
@@ -751,8 +751,7 @@ body {
     }
 }
       /*FOURTH SECTION  */
- 
-     .footer {
+      .footer {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -805,26 +804,23 @@ body {
         }
         .footer-Head{
             flex-direction: row;
-           gap: 35px;
+           justify-content: space-between;
            padding-bottom: 3rem;
            line-height: 3rem;
+           flex: 2;
         }
     } 
     @media (min-width:1200px) 
     {
-     .footer-Full
+        .footer-Full
         {
-            display: flex; 
-            padding-left: 7%;
-        }
-        .footer-Head{
-            padding-left: 4rem;
-            gap: 2.5rem;
+            flex-direction: row;
         }
         .content1 {
             margin-top: 4rem;
-            text-align: left;
-             width: 30%; 
+          text-align: left;
+          margin-left: 6rem;
             font-size: 1.6rem;
+            flex: 1;
            }
         }
